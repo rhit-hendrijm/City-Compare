@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1161228225DC4F34005D4B22 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161228125DC4F34005D4B22 /* CompareViewController.swift */; };
 		118E9CD925DB295700E8D467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9CD825DB295700E8D467 /* AppDelegate.swift */; };
 		118E9CDB25DB295700E8D467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9CDA25DB295700E8D467 /* SceneDelegate.swift */; };
 		118E9CDD25DB295700E8D467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9CDC25DB295700E8D467 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1161228125DC4F34005D4B22 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
 		118E9CD525DB295700E8D467 /* City Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Compare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118E9CD825DB295700E8D467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		118E9CDA25DB295700E8D467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				118E9D0E25DB307700E8D467 /* City.swift */,
 				118E9D1125DB328500E8D467 /* LoginViewController.swift */,
 				118E9D1925DB376300E8D467 /* UserManager.swift */,
+				1161228125DC4F34005D4B22 /* CompareViewController.swift */,
 			);
 			path = "City Compare";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				118E9D0F25DB307700E8D467 /* City.swift in Sources */,
 				118E9CDD25DB295700E8D467 /* ViewController.swift in Sources */,
 				118E9CD925DB295700E8D467 /* AppDelegate.swift in Sources */,
+				1161228225DC4F34005D4B22 /* CompareViewController.swift in Sources */,
 				118E9D1A25DB376300E8D467 /* UserManager.swift in Sources */,
 				118E9CDB25DB295700E8D467 /* SceneDelegate.swift in Sources */,
 			);

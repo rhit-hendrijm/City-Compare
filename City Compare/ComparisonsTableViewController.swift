@@ -24,10 +24,40 @@ class ComparisonsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddPhotoDialog))
+        navigationItem.title = "City Compare"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
         comparisonsRef = Firestore.firestore().collection("Comparisons")
         
+    }
+    
+    @objc func showMenu() {
+        let alertController = UIAlertController(title: nil,
+                                                message: nil,
+                                                preferredStyle: .actionSheet)
+        
+        alertController.addAction(UIAlertAction(title: "Cancel",
+                                                style: .cancel,
+                                                handler: nil))
+        alertController.addAction(UIAlertAction(title: "Add New Comparison",
+                                                style: .default) { (action) in
+            self.showAddNewComparison()
+        })
+
+        alertController.addAction(UIAlertAction(title: "Leave a Review",
+                                                style: .default) { (action) in
+            self.showLeaveReviewDialog()
+        })
+        
+        alertController.addAction(UIAlertAction(title: "Sign Out",
+                                                style: .default) { (action) in
+            do {
+                try Auth.auth().signOut()
+            } catch {
+                print("Sign out error")
+            }
+        })
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,6 +105,16 @@ class ComparisonsTableViewController: UITableViewController {
         comparisonsListener.remove()
         Auth.auth().removeStateDidChangeListener(authStateListenerHandle)
     }
+    
+    @objc func showAddNewComparison() {
+        print("show add new comparison dialog")
+        self.performSegue(withIdentifier: "ShowCompareSegue", sender: self)
+    }
+    
+    @objc func showLeaveReviewDialog() {
+        print("show leave review dialog")
+    }
+    
     
 //    @objc func showAddPhotoDialog() {
 //        let alertController = UIAlertController(title: "Create a new photo", message: "", preferredStyle: .alert)
