@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115A505825DDC090002B33C2 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A505725DDC090002B33C2 /* ReviewViewController.swift */; };
 		1161228225DC4F34005D4B22 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161228125DC4F34005D4B22 /* CompareViewController.swift */; };
 		118E9CD925DB295700E8D467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9CD825DB295700E8D467 /* AppDelegate.swift */; };
 		118E9CDB25DB295700E8D467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9CDA25DB295700E8D467 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115A505725DDC090002B33C2 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		1161228125DC4F34005D4B22 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
 		118E9CD525DB295700E8D467 /* City Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Compare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118E9CD825DB295700E8D467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				118E9D1125DB328500E8D467 /* LoginViewController.swift */,
 				118E9D1925DB376300E8D467 /* UserManager.swift */,
 				1161228125DC4F34005D4B22 /* CompareViewController.swift */,
+				115A505725DDC090002B33C2 /* ReviewViewController.swift */,
 			);
 			path = "City Compare";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				118E9D1225DB328500E8D467 /* LoginViewController.swift in Sources */,
 				118E9CEE25DB2A9800E8D467 /* ComparisonsTableViewController.swift in Sources */,
+				115A505825DDC090002B33C2 /* ReviewViewController.swift in Sources */,
 				118E9D0C25DB2C7900E8D467 /* Comparison.swift in Sources */,
 				118E9D0F25DB307700E8D467 /* City.swift in Sources */,
 				118E9CDD25DB295700E8D467 /* ViewController.swift in Sources */,

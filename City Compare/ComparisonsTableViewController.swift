@@ -107,12 +107,11 @@ class ComparisonsTableViewController: UITableViewController {
     }
     
     @objc func showAddNewComparison() {
-        print("show add new comparison dialog")
         self.performSegue(withIdentifier: "ShowCompareSegue", sender: self)
     }
     
     @objc func showLeaveReviewDialog() {
-        print("show leave review dialog")
+        self.performSegue(withIdentifier: "showReviewSegue", sender: self)
     }
     
     
