@@ -28,14 +28,14 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func pressedSubmitReview(_ sender: Any) {
-        cityRef.updateData(["Rent" : FieldValue.arrayUnion([rentTextField.text]),
-                            "Home Price" : FieldValue.arrayUnion([homePriceTextField.text]),
-                            "Energy Bill" : FieldValue.arrayUnion([energyBillTextField.text]),
-                            "Phone Bill" : FieldValue.arrayUnion([phoneBillTextField.text]),
-                            "Gas" : FieldValue.arrayUnion([gasTextField.text]),
-                            "Night Life" : FieldValue.arrayUnion([nightLifeTextField.text]),
-                            "Food" : FieldValue.arrayUnion([foodTextField.text]),
-                            "Diversity" : FieldValue.arrayUnion([diversityTextField.text])])
+        cityRef.updateData(["Rent" : FieldValue.arrayUnion([Double(rentTextField.text!)]),
+                            "Home Price" : FieldValue.arrayUnion([Double(homePriceTextField.text!)]),
+                            "Energy Bill" : FieldValue.arrayUnion([Double(energyBillTextField.text!)]),
+                            "Phone Bill" : FieldValue.arrayUnion([Double(phoneBillTextField.text!)]),
+                            "Gas" : FieldValue.arrayUnion([Double(gasTextField.text!)]),
+                            "Night Life" : FieldValue.arrayUnion([Double(nightLifeTextField.text!)]),
+                            "Food" : FieldValue.arrayUnion([Double(foodTextField.text!)]),
+                            "Diversity" : FieldValue.arrayUnion([Double(diversityTextField.text!)])])
         self.dismiss(animated: true, completion: nil)
     }
     

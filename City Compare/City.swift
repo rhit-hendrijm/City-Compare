@@ -9,7 +9,6 @@ import Foundation
 import Firebase
 
 class City {
-    var name: String
     var id: String?
     var diversity: Double
     var energyBill: Double
@@ -23,7 +22,6 @@ class City {
     init(documentSnapshot: DocumentSnapshot) {
         self.id = documentSnapshot.documentID
         let data = documentSnapshot.data()!
-        self.name = data["Name"] as! String
         self.diversity = Double((data["Diversity"] as! Array<Double>).reduce(0, +)) / Double((data["Diversity"] as! Array<Double>).count)
         self.energyBill = Double((data["Energy Bill"] as! Array<Double>).reduce(0, +)) / Double((data["Energy Bill"] as! Array<Double>).count)
         self.food = Double((data["Food"] as! Array<Double>).reduce(0, +)) / Double((data["Food"] as! Array<Double>).count)

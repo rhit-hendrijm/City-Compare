@@ -12,9 +12,9 @@ class ComparisonsTableViewController: UITableViewController {
     let comparisonCellIdentifier = "ComparisonCell"
     let detailSegueIdentifier = "DetailSegue"
     var comparisonsRef: CollectionReference!
+    var citiesRef: CollectionReference!
     var comparisonsListener: ListenerRegistration!
     var authStateListenerHandle: AuthStateDidChangeListenerHandle!
-//    var isShowingallPhotos = true
     var storageRef = StorageReference()
     var docId = ""
     
@@ -27,7 +27,7 @@ class ComparisonsTableViewController: UITableViewController {
         navigationItem.title = "City Compare"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
         comparisonsRef = Firestore.firestore().collection("Comparisons")
-        
+        citiesRef = Firestore.firestore().collection("Cities")
     }
     
     @objc func showMenu() {
@@ -114,56 +114,6 @@ class ComparisonsTableViewController: UITableViewController {
         self.performSegue(withIdentifier: "showReviewSegue", sender: self)
     }
     
-    
-//    @objc func showAddPhotoDialog() {
-//        let alertController = UIAlertController(title: "Create a new photo", message: "", preferredStyle: .alert)
-//
-//        alertController.addTextField { (textField) in
-//            textField.placeholder = "Title"
-//        }
-//
-////        alertController.addTextField { (textField) in
-////            textField.placeholder = "Photo URL"
-////        }
-//
-//        alertController.addAction(UIAlertAction(title: "Cancel",
-//                                                style: .cancel,
-//                                                handler: nil))
-//        alertController.addAction(UIAlertAction(title: "Upload Photo",
-//                                                style: UIAlertAction.Style.default) { (action) in
-//            let titleTextField = alertController.textFields![0] as UITextField
-////            let photoURLTextField = alertController.textFields![1] as UITextField
-//            //            print(titleTextField.text!)
-//            //            print(photoURLTextField.text!)
-//            //            let newPhoto = Photo(title: titleTextField.text!, photoURL: photoURLTextField.text!)
-//            //            self.photos.insert(newPhoto, at: 0)
-//            //            self.tableView.reloadData()
-//            let documentRef = self.photosRef.addDocument(data: [
-//                "title": titleTextField.text!,
-////                "photoURL": photoURLTextField.text!,
-//                "created": Timestamp.init(),
-//                "author": Auth.auth().currentUser!.uid
-//
-//            ])
-//
-//            self.docId = documentRef.documentID
-//            self.storageRef = Storage.storage().reference().child("Photos").child(self.docId)
-//
-//            let imagePickerController = UIImagePickerController()
-//            imagePickerController.delegate = self
-//            imagePickerController.allowsEditing = true
-//            if UIImagePickerController.isSourceTypeAvailable(.camera) {
-//                imagePickerController.sourceType = .camera
-//            } else {
-//                imagePickerController.sourceType = .photoLibrary
-//            }
-//            self.present(imagePickerController, animated: true, completion: nil)
-//
-//
-//        })
-//        present(alertController, animated: true, completion: nil)
-//    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return comparisons.count
     }
@@ -188,12 +138,12 @@ class ComparisonsTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == detailSegueIdentifier {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//                //                (segue.destination as! PhotoDetailViewController).photo = photos[indexPath.row]
-//                (segue.destination as! PhotoDetailViewController).photoRef = photosRef.document(photos[indexPath.row].id!)
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                (segue.destination as! CompareViewController).cityOneRef = citiesRef.document(comparisons[indexPath.row].cityOne)
+                (segue.destination as! CompareViewController).cityTwoRef = citiesRef.document(comparisons[indexPath.row].cityTwo)
+            }
+        }
+    }
 }
