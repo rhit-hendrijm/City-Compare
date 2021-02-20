@@ -74,36 +74,23 @@
             <objects>
                 <viewController id="q9B-FB-VD1" customClass="CompareViewController" customModule="City_Compare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ax6-nl-LJk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMW-da-gCd">
                                 <rect key="frame" x="0.0" y="88" width="207" height="774"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7M-Mm-dQD">
-                                        <rect key="frame" x="43.5" y="736" width="120" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="n3X-hr-Idi"/>
-                                        </constraints>
-                                        <state key="normal" title="Change City">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pressedChangeCityOne:" destination="q9B-FB-VD1" eventType="touchUpInside" id="DhJ-7i-zZt"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSm-XY-iKC">
-                                        <rect key="frame" x="63" y="15" width="81" height="19"/>
+                                        <rect key="frame" x="63" y="15" width="81" height="7"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-YM-lpf">
-                                        <rect key="frame" x="0.0" y="49" width="207" height="676"/>
+                                        <rect key="frame" x="0.0" y="37" width="207" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqs-Ue-13m">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median Rent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0u-pD-LJi">
                                                         <rect key="frame" x="53" y="5" width="101.5" height="20.5"/>
@@ -127,7 +114,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0a-0P-gbW">
-                                                <rect key="frame" x="0.0" y="84.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="87.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median Home Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-r6-vYY">
                                                         <rect key="frame" x="24.5" y="5" width="158" height="20.5"/>
@@ -151,7 +138,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TP-PQ-Z4K">
-                                                <rect key="frame" x="0.0" y="169" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="175" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-0X-dMJ">
                                                         <rect key="frame" x="60.5" y="5" width="86.5" height="20.5"/>
@@ -175,7 +162,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-nJ-qjo">
-                                                <rect key="frame" x="0.0" y="253.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="262.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-UW-6b3">
                                                         <rect key="frame" x="63.5" y="5" width="80.5" height="20.5"/>
@@ -199,7 +186,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-7J-j5B">
-                                                <rect key="frame" x="0.0" y="338" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="350" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-fa-MdB">
                                                         <rect key="frame" x="88" y="5" width="31.5" height="20.5"/>
@@ -223,7 +210,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwJ-hG-1LB">
-                                                <rect key="frame" x="0.0" y="422.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="437.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17z-UG-Mjb">
                                                         <rect key="frame" x="64" y="5" width="79" height="20.5"/>
@@ -247,7 +234,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsE-Ba-8Y0">
-                                                <rect key="frame" x="0.0" y="507" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="525" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-eE-VMW">
                                                         <rect key="frame" x="83" y="5" width="41" height="20.5"/>
@@ -271,7 +258,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLu-2f-rQo">
-                                                <rect key="frame" x="0.0" y="591.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="612.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diversity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yv-4c-9oM">
                                                         <rect key="frame" x="67.5" y="5" width="72.5" height="20.5"/>
@@ -296,28 +283,38 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMy-hv-wMn">
+                                        <rect key="frame" x="73" y="767" width="61" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.00063837790979999996" alpha="0.43469945640000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Find City">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="szl-QL-edf" kind="show" identifier="cityOneSegue" id="5Fc-CW-Icp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="4y5-YM-lpf" firstAttribute="centerY" secondItem="fMW-da-gCd" secondAttribute="centerY" id="8Sn-QH-fBT"/>
-                                    <constraint firstItem="P7M-Mm-dQD" firstAttribute="top" secondItem="4y5-YM-lpf" secondAttribute="bottom" constant="11" id="A1r-wu-qqb"/>
                                     <constraint firstItem="4y5-YM-lpf" firstAttribute="top" secondItem="kSm-XY-iKC" secondAttribute="bottom" constant="15" id="Idg-1e-65v"/>
-                                    <constraint firstItem="P7M-Mm-dQD" firstAttribute="centerX" secondItem="fMW-da-gCd" secondAttribute="centerX" id="LTf-5X-T7q"/>
                                     <constraint firstItem="kSm-XY-iKC" firstAttribute="top" secondItem="fMW-da-gCd" secondAttribute="top" constant="15" id="MkF-Yz-DNf"/>
                                     <constraint firstAttribute="width" constant="207" id="Yrc-Vk-dYk"/>
                                     <constraint firstAttribute="trailing" secondItem="4y5-YM-lpf" secondAttribute="trailing" id="fx3-DR-PeO"/>
+                                    <constraint firstItem="rMy-hv-wMn" firstAttribute="top" secondItem="4y5-YM-lpf" secondAttribute="bottom" constant="30" id="rNM-Tj-kWE"/>
                                     <constraint firstItem="kSm-XY-iKC" firstAttribute="centerX" secondItem="fMW-da-gCd" secondAttribute="centerX" id="uGO-6Q-lKW"/>
                                     <constraint firstItem="4y5-YM-lpf" firstAttribute="leading" secondItem="fMW-da-gCd" secondAttribute="leading" id="xrL-L5-mfi"/>
+                                    <constraint firstItem="rMy-hv-wMn" firstAttribute="centerX" secondItem="fMW-da-gCd" secondAttribute="centerX" id="yvf-xY-po2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIl-cK-Qzx">
                                 <rect key="frame" x="207" y="88" width="207" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gIt-Eb-Rco">
-                                        <rect key="frame" x="0.0" y="49" width="207" height="676"/>
+                                        <rect key="frame" x="0.0" y="37" width="207" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJl-7f-KJM">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median Rent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eST-Hy-N78">
                                                         <rect key="frame" x="53" y="5" width="101.5" height="20.5"/>
@@ -341,7 +338,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THL-0o-Gni">
-                                                <rect key="frame" x="0.0" y="84.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="87.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median Home Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1he-G3-9t5">
                                                         <rect key="frame" x="24.5" y="5" width="158" height="20.5"/>
@@ -365,7 +362,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB8-p4-Op3">
-                                                <rect key="frame" x="0.0" y="169" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="175" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-O8-maf">
                                                         <rect key="frame" x="60.5" y="5" width="86.5" height="20.5"/>
@@ -389,7 +386,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zol-ap-s6b">
-                                                <rect key="frame" x="0.0" y="253.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="262.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfG-hP-kyN">
                                                         <rect key="frame" x="63.5" y="5" width="80.5" height="20.5"/>
@@ -413,7 +410,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yP-Cf-R80">
-                                                <rect key="frame" x="0.0" y="338" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="350" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwg-Ms-K5a">
                                                         <rect key="frame" x="88" y="5" width="31.5" height="20.5"/>
@@ -437,7 +434,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-tL-2tm">
-                                                <rect key="frame" x="0.0" y="422.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="437.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm7-dB-gsI">
                                                         <rect key="frame" x="64" y="5" width="79" height="20.5"/>
@@ -461,7 +458,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-0g-GE1">
-                                                <rect key="frame" x="0.0" y="507" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="525" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5X-G2-iSn">
                                                         <rect key="frame" x="83" y="5" width="41" height="20.5"/>
@@ -485,7 +482,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cId-Mu-APr">
-                                                <rect key="frame" x="0.0" y="591.5" width="207" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="612.5" width="207" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diversity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0su-7S-6vx">
                                                         <rect key="frame" x="67.5" y="5" width="72.5" height="20.5"/>
@@ -510,37 +507,34 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-Bz-PRd">
-                                        <rect key="frame" x="43.5" y="736" width="120" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="nuU-sg-BZl"/>
-                                        </constraints>
-                                        <state key="normal" title="Change City">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pressedChangeCityTwo:" destination="q9B-FB-VD1" eventType="touchUpInside" id="JUa-Zw-5X3"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY5-TB-XKI">
-                                        <rect key="frame" x="62.5" y="15" width="82" height="19"/>
+                                        <rect key="frame" x="62.5" y="15" width="82" height="7"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVk-oG-wrZ">
+                                        <rect key="frame" x="73" y="767" width="61" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.00063837790979999996" alpha="0.43469945640000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Find City">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="szl-QL-edf" kind="show" identifier="cityTwoSegue" id="8xP-jp-GoC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="gIt-Eb-Rco" firstAttribute="centerY" secondItem="tIl-cK-Qzx" secondAttribute="centerY" id="43l-9b-96d"/>
+                                    <constraint firstItem="DVk-oG-wrZ" firstAttribute="top" secondItem="gIt-Eb-Rco" secondAttribute="bottom" constant="30" id="6jm-CH-cZf"/>
                                     <constraint firstItem="gIt-Eb-Rco" firstAttribute="leading" secondItem="tIl-cK-Qzx" secondAttribute="leading" id="CJW-Oq-zro"/>
                                     <constraint firstItem="iY5-TB-XKI" firstAttribute="centerX" secondItem="tIl-cK-Qzx" secondAttribute="centerX" id="Kmr-yQ-tOM"/>
                                     <constraint firstItem="iY5-TB-XKI" firstAttribute="top" secondItem="tIl-cK-Qzx" secondAttribute="top" constant="15" id="Oyx-JO-c2E"/>
                                     <constraint firstItem="gIt-Eb-Rco" firstAttribute="top" secondItem="iY5-TB-XKI" secondAttribute="bottom" constant="15" id="SSd-Uj-jwK"/>
-                                    <constraint firstItem="cjn-Bz-PRd" firstAttribute="centerX" secondItem="tIl-cK-Qzx" secondAttribute="centerX" id="far-uC-Gs0"/>
                                     <constraint firstAttribute="trailing" secondItem="gIt-Eb-Rco" secondAttribute="trailing" id="rVP-fK-cQ3"/>
+                                    <constraint firstItem="DVk-oG-wrZ" firstAttribute="centerX" secondItem="tIl-cK-Qzx" secondAttribute="centerX" id="sA2-IG-zBC"/>
                                     <constraint firstAttribute="width" constant="207" id="sp3-NY-1Fd"/>
-                                    <constraint firstItem="cjn-Bz-PRd" firstAttribute="top" secondItem="gIt-Eb-Rco" secondAttribute="bottom" constant="11" id="tTu-Jm-pfG"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -598,6 +592,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1p-L8-yBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711.5942028985507" y="-83.035714285714278"/>
+        </scene>
+        <!--City Table View Controller-->
+        <scene sceneID="ZL8-Zh-i9C">
+            <objects>
+                <tableViewController id="szl-QL-edf" customClass="CityTableViewController" customModule="City_Compare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RgP-PD-XRv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" id="ReF-qx-fXw">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ReF-qx-fXw" id="orl-nq-1Vy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="q9B-FB-VD1" kind="show" identifier="goBackSegue" id="sBj-Sy-9X9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="szl-QL-edf" id="6ov-4F-wR1"/>
+                            <outlet property="delegate" destination="szl-QL-edf" id="U4R-u1-cHX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="0iF-Ef-tdy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L45-gQ-wf2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="-83"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="SOG-x6-ZPb">
@@ -682,8 +708,8 @@
                                             <action selector="pressedSubmitReview:" destination="M6p-Tq-Cra" eventType="touchUpInside" id="bMB-UX-YTl"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-Ex-jil">
-                                        <rect key="frame" x="164" y="15" width="86.5" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dallas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-Ex-jil">
+                                        <rect key="frame" x="178.5" y="15" width="57.5" height="18"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -998,7 +1024,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Cgp-j1-0kh"/>
+        <segue reference="5Fc-CW-Icp"/>
+        <segue reference="sBj-Sy-9X9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

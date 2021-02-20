@@ -50,6 +50,8 @@ class CompareViewController: UIViewController {
     
     var cityOne: City?
     var cityTwo: City?
+    var cityOneName: String!
+    var cityTwoName: String!
     var cityOneRef: DocumentReference!
     var cityTwoRef: DocumentReference!
     var CityOneListener: ListenerRegistration!
@@ -113,11 +115,46 @@ class CompareViewController: UIViewController {
     }
     
     
-    @IBAction func pressedChangeCityOne(_ sender: Any) {
-    }
-    
-    @IBAction func pressedChangeCityTwo(_ sender: Any) {
-    }
+//    @IBAction func pressedChangeCityOne(_ sender: Any) {
+////        cityOneRef = Firestore.firestore().collection("Cities").document(cityOneName)
+//        print(cityOneRef)
+//        if cityOneRef != nil {
+//            CityOneListener = cityOneRef.addSnapshotListener({ (documentSnapshot, error) in
+//                if let error = error {
+//                    print("Error getting city one \(error)")
+//                    return
+//                }
+//                if !documentSnapshot!.exists {
+//                    print("Might go back to the list since someone else deleted thid document")
+//                    return
+//                }
+//                self.cityOne = City(documentSnapshot: documentSnapshot!)
+//                print("about to update city two")
+//                self.updateCityOne()
+//            })
+//        }
+////        updateCityOne()
+//    }
+//    
+//    @IBAction func pressedChangeCityTwo(_ sender: Any) {
+////        cityTwoRef = Firestore.firestore().collection("Cities").document(cityTwoName)
+////        updateCityTwo()
+//        if cityTwoRef != nil {
+//            CityTwoListener = cityTwoRef.addSnapshotListener({ (documentSnapshot, error) in
+//                if let error = error {
+//                    print("Error getting city one \(error)")
+//                    return
+//                }
+//                if !documentSnapshot!.exists {
+//                    print("Might go back to the list since someone else deleted thid document")
+//                    return
+//                }
+//                self.cityTwo = City(documentSnapshot: documentSnapshot!)
+//                print("about to update city two")
+//                self.updateCityTwo()
+//            })
+//        }
+//    }
     
     func updateCityOne() {
         cityOneLabel.text = cityOne?.id
@@ -224,6 +261,18 @@ class CompareViewController: UIViewController {
         } else {
             diversityOneView.backgroundColor = UIColor.lightGray
             diversityTwoView.backgroundColor = UIColor.lightGray
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cityOneSegue" {
+            (segue.destination as! CityTableViewController).isCityOn = true
+            (segue.destination as! CityTableViewController).cityTwoRef = cityTwoRef
+        }
+        
+        if segue.identifier == "cityTwoSegue" {
+            (segue.destination as! CityTableViewController).isCityOn = false
+            (segue.destination as! CityTableViewController).cityOneRef = cityOneRef
         }
     }
 }
